@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-skill.component.css']
 })
 export class AddSkillComponent implements OnInit {
-
+  name = '';
+  phone = '';
+  skill = '';
+  province = '';
+  price = '';
   constructor() { }
 
   ngOnInit() {

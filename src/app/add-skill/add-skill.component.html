@@ -1,3 +1,34 @@
-<p>
-  add-skill works!
-</p>
+<div class="contact-form mt-3">
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h1>Add Skills</h1>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 right">
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Your name" name="name" [(ngModel)]="name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Your phone" name="phone" [(ngModel)]="phone">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Your skill" name="skill" [(ngModel)]="phone">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Your province" name="province"
+              [(ngModel)]="province">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Your price" name="price" [(ngModel)]="price">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control form-control-lg">
+          </textarea>
+          </div>
+          <input type="submit" class="btn btn-secondary btn-block" value="Send" name="comments" [(ngModel)]="comments">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
