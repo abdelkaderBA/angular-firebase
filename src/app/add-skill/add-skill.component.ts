@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase, AngularFireList, AngularFireDatabaseModule } from '@angular/fire/database';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-add-skill',
@@ -6,12 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-skill.component.css']
 })
 export class AddSkillComponent implements OnInit {
-  name = '';
-  phone = '';
-  skill = '';
-  province = '';
-  price = '';
-  constructor() { }
+
+  data = {
+    name : '' ,
+    phone :  '' ,
+    skill :  '' ,
+    province :  '' ,
+    price :  ''  ,
+    comments :  '' 
+  } 
+  
+  constructor(public db:AngularFireDatabase) { }
 
   ngOnInit() {
   }
