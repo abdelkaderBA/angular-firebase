@@ -22,7 +22,6 @@ export class MyskillComponent implements OnInit {
 
         })
       })
-    console.log(this.itemArray);
   }
 
   ngOnInit() {
@@ -30,7 +29,6 @@ export class MyskillComponent implements OnInit {
 
 }
 export class ListItemClass {
-  $key: string;
   name: string;
   phone: string;
   comments: string;
