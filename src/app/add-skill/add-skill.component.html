@@ -7,26 +7,26 @@
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12 right">
           <div class="form-group">
-            <input type="text" class="form-control form-control-lg" placeholder="Your name" name="name" [(ngModel)]="name">
+            <input type="text" class="form-control form-control-lg" placeholder="Your name" name="name" [(ngModel)]="data.name">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control form-control-lg" placeholder="Your phone" name="phone" [(ngModel)]="phone">
+            <input type="text" class="form-control form-control-lg" placeholder="Your phone" name="phone" [(ngModel)]="data.phone">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control form-control-lg" placeholder="Your skill" name="skill" [(ngModel)]="phone">
+            <input type="text" class="form-control form-control-lg" placeholder="Your skill" name="skill" [(ngModel)]="data.skill">
           </div>
           <div class="form-group">
             <input type="text" class="form-control form-control-lg" placeholder="Your province" name="province"
-              [(ngModel)]="province">
+              [(ngModel)]="data.province">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control form-control-lg" placeholder="Your price" name="price" [(ngModel)]="price">
+            <input type="text" class="form-control form-control-lg" placeholder="Your price" name="price" [(ngModel)]="data.price">
           </div>
           <div class="form-group">
-            <textarea class="form-control form-control-lg">
+            <textarea class="form-control form-control-lg" name="comments" [(ngModel)]="data.comments">
           </textarea>
           </div>
-          <input type="submit" class="btn btn-secondary btn-block" value="Send" name="comments" [(ngModel)]="comments">
+          <button type="button" class="btn btn-secondary btn-block" (click)="insertSkill()">Send</button>
         </div>
       </div>
     </form>
